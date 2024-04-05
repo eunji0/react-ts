@@ -5,9 +5,9 @@ function ListGroup() {
     'Tokyo',
     'London',
     'Paris'
-  ]
+  ];
 
-  items = [];
+  const handleClick = (event: MouseEvent)=>console.log(event)
 
   return (
     <>
@@ -16,7 +16,7 @@ function ListGroup() {
         <ul className="list-group">
           {
             items.map(item=>(
-              <li key={item}>{item}</li>
+              <li className="list-group-item" key={item} onClick={handleClick}>{item}</li>
             ))
           }
         </ul>
