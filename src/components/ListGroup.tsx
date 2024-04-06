@@ -6,6 +6,8 @@ interface Props {
   onSelectItem: (item: string)=>void
 }
 
+//props와 state의 차이 짚고 넘어갈 것
+
 function ListGroup({items, heading, onSelectItem}: Props) {
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
